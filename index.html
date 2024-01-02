@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h1>Selamat datang di Kalkulator Segitiga</h1>
+    <img src="img/20230404134315_IMG_1172.JPG"  alt="Logo" class="logo">
+    <h4>Amos Aleksiato Ziliwu</h4>
+
+    <!-- Luas Segitiga -->
+    <div class="luas-segitiga">
+        <h2>Hitung Luas Segitiga</h2>
+        <img src="img/Luas Segitiga.png" alt="Triangle Image" width="300" height="250">
+        <p>Masukkan nilai alas (a) dan tinggi (t) segitiga:</p>
+        <form>
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas" name="alas" required><br><br>
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" name="tinggi" required><br><br>
+            <button type="button" onclick="hitungLuas()">Hitung</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+        <p>Hasil:</p>
+        <p id="luas"></p>
+    </div>
+
+    <!-- Keliling Segitiga -->
+    <div class="keliling-segitiga">
+        <h2>Hitung Keliling Segitiga</h2>
+        <img src="img/Keliling Segitiga.png" alt="Triangle Image" width="300" height="250">
+        <p>Masukkan nilai sisi-sisi segitiga:</p>
+        <form>
+            <label for="sisi-a">Sisi A:</label>
+            <input type="number" id="sisi-a" name="sisi-a" required><br><br>
+            <label for="sisi-b">Sisi B:</label>
+            <input type="number" id="sisi-b" name="sisi-b" required><br><br>
+            <label for="sisi-c">Sisi C:</label>
+            <input type="number" id="sisi-c" name="sisi-c" required><br><br>
+            <button type="button" onclick="hitungKeliling()">Hitung</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+        <p>Hasil:</p>
+        <p id="keliling"></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
